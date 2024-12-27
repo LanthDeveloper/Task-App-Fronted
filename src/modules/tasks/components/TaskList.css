@@ -1,0 +1,34 @@
+.task-item {
+  .btnDeleteTask {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.35s ease;
+  }
+}
+
+.task-item:hover {
+  .btnDeleteTask {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.bg-b91c1c {
+  background-color: #b91c1c;
+}
+
+.bg-facc15 {
+  background-color: #facc15;
+}
+
+.bg-4ade80 {
+  background-color: #2ea158;
+}
+
+.color-black {
+  color: black;
+}
+
+.color-white {
+  color: white;
+}

@@ -1,0 +1,45 @@
+.main-cover-box{
+    height: 100%;
+}
+.main-cover-box--header {
+  width: 100%;
+  text-align: center;
+  font-size: 6em;
+  line-height: 1em;
+  * {
+    display: inline-block;
+  }
+  h3 {
+    font-weight: lighter;
+    font-weight: bolder;
+  }
+  span {
+    color: #fff;
+    position: relative;
+  }
+  span::before {
+    background: var(--color-brand);
+    content: "";
+    height: 100%;
+    left: -0.1em;
+    position: absolute;
+    top: 0;
+    width: calc(100% + 0.3em);
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-cover-box--header {
+    font-size: 5em;
+    line-height: 1em;
+  }
+}
+
+@media (max-width: 670px) {
+  .main-cover-box--header {
+    text-align: left;
+    font-size: 3em;
+    line-height: 1em;
+  }
+}
