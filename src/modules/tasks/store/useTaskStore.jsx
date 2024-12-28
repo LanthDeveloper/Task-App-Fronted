@@ -21,7 +21,7 @@ export const useTaskStore = create(
 
       createTask: async ({ data, token }) => {
         try {
-          const response = await API.post(BACKEND_HOST, {
+          const response = await API.post(`${BACKEND_HOST}/api/tasks`, {
             body: data,
             headers: {
               Authorization: `Bearer ${token}`,
@@ -46,7 +46,7 @@ export const useTaskStore = create(
       getTasks: async (token) => {
         if (token) {
           try {
-            const response = await API.get(`${BACKEND_HOST}`, {
+            const response = await API.get(`${BACKEND_HOST}/api/tasks`, {
               headers: {
                 Authorization: `Bearer ${token}`,
                 "Content-Type": "application/json",
@@ -66,7 +66,7 @@ export const useTaskStore = create(
 
       editTask: async ({ data, token }) => {
         try {
-          const response = await API.put(`${BACKEND_HOST}/${data.id}`, {
+          const response = await API.put(`${BACKEND_HOST}/api/tasks/${data.id}`, {
             headers: {
               Authorization: `Bearer ${token}`,
               "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export const useTaskStore = create(
 
       deleteTask: async ({ id, token }) => {
         try {
-          const response = await API.del(`${BACKEND_HOST}/${id}`, {
+          const response = await API.del(`${BACKEND_HOST}/api/tasks/${id}`, {
             headers: {
               Authorization: `Bearer ${token}`,
               "Content-Type": "application/json",
