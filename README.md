@@ -1,79 +1,70 @@
 # Proyecto Frontend
 
-Este proyecto es una aplicación frontend desarrollada con [React].
+Este es el README del proyecto Task App Amazontic. Aquí encontrarás información sobre cómo configurar, ejecutar y contribuir al proyecto.
 
-## Tabla de Contenidos
+## Requisitos
 
-1. [Descripción](#descripción)
-2. [Instalación](#instalación)
-3. [Uso](#uso)
-4. [Estructura del Proyecto](#estructura-del-proyecto)
-5. [Contribuciones](#contribuciones)
-6. [Licencia](#licencia)
-
-## Descripción
-
-Aplicación frontend que permite a los usuarios [descripción breve del propósito del proyecto]. Diseñada para [funcionalidades principales del proyecto].
+- Node.js
+- npm o yarn
 
 ## Instalación
 
 1. Clona el repositorio:
-    ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
-    ```
+
+```bash
+git clone https://github.com/LanthDeveloper/Task-App-Fronted.git
+```
+
 2. Navega al directorio del proyecto:
-    ```bash
-    cd tu-repositorio
-    ```
+
+```bash
+cd tu-repositorio
+```
+
 3. Instala las dependencias:
-    ```bash
-    npm install
-    ```
+
+```bash
+npm install
+```
+
+o
+
+```bash
+yarn install
+```
 
 ## Uso
 
-Inicia la aplicación en desarrollo:
+Para iniciar el servidor de desarrollo, ejecuta:
+
 ```bash
 npm start
 ```
-Disponible en `http://localhost:3000`.
+
+o
+
+```bash
+yarn start
+```
 
 ## Estructura del Proyecto
 
-```
-/src
-  /components
-  /containers
-  /services
-  /styles
-  /utils
-  App.js
-  index.js
-/public
-  index.html
-  favicon.ico
-README.md
-package.json
-```
+- `src/`: Contiene el código fuente del proyecto.
+- `public/`: Contiene archivos estáticos y el archivo `index.html`.
+- `package.json`: Contiene las dependencias y scripts del proyecto.
 
-- **/components**: Componentes UI reutilizables.
-- **/containers**: Componentes con estado y lógica.
-- **/services**: Interacción con APIs.
-- **/styles**: Archivos CSS.
-- **/utils**: Funciones auxiliares.
-- **App.js**: Componente principal.
-- **index.js**: Punto de entrada.
+## Contribuir
 
-## Contribuciones
-
-1. Haz un fork.
-2. Crea una rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
-4. Sube cambios (`git push origin feature/nueva-funcionalidad`).
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
 ## Licencia
 
-Licencia MIT. Consulta [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
-# Task-App-Fronted
+## Contacto
+
+Para cualquier consulta o sugerencia, puedes contactarnos en [lanthdev@gmail.com](mailto:lanthdev@gmail.com).
