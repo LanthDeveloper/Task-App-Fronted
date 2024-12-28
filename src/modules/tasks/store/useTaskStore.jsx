@@ -4,7 +4,7 @@ import { supabaseClient } from "../../../supabase/supabaseConfig";
 import HelpHttp from "../../shared/helpers/HelpHttp";
 import { vServer } from "../../shared/vars/vServer";
 
-const BACKEND_HOST = vServer.BACKEND_HOST;
+const BACKEND_HOST = vServer.VITE_BACKEND_HOST;
 const API = HelpHttp();
 
 export const useTaskStore = create(
