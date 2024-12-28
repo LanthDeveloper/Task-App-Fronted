@@ -19,11 +19,11 @@
   width: fit-content;
 }
 
-.shadow-medium {
-  box-shadow: none;
+.dashboard-section{
+  .shadow-medium {
+    box-shadow: none;
+  }
 }
-
-
 
 
 .btn-effect-1 {

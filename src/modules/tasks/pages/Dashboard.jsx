@@ -40,7 +40,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <section className="w-full max-w-[1280px] mx-auto min-h-[100svh] pt-[4em] h-full px-4">
+      <section className="w-full max-w-[1280px] mx-auto min-h-[100svh] pt-[4em] h-full px-4 dashboard-section">
         <div className="flex w-full flex-col max-w-2xl mx-auto">
           <h2 className="text-5xl mt-6 font-medium  mb-6 animate__animated animate__fadeInDown overflow-hidden">
             Dashboard
