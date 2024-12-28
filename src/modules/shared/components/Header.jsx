@@ -84,7 +84,7 @@ const Header = () => {
               <DropdownMenu aria-label="Profile Actions" variant="flat">
                 <DropdownItem key="profile" className="h-14 gap-2">
                   <p className="font-semibold">Registrado como</p>
-                  <p className="font-semibold">{userData.email}</p>
+                  <p className="font-semibold">{userData?.email}</p>
                 </DropdownItem>
                 <DropdownItem
                   key="logout"
