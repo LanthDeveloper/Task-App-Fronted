@@ -29,10 +29,25 @@ function App() {
   }, [setSession]);
 
   useEffect(() => {
-   if(session){
-    getTasks(session.access_token);
-   }
+    if (session) {
+      getTasks(session.access_token);
+    }
   }, [session]);
+
+  useEffect(() => {
+    console.clear();
+    console.log(`
+             Hola dev!        
+      Te saluda Anthony Lee 👋 
+  Cada línea de código cuenta una historia     
+     Cada proyecto, un nuevo horizonte    
+  Si deseas colaborar conmigo conectemos y       
+     creemos algo extraordinario 🚀   
+       
+     https://lanthdev.pages.dev
+      
+      `);
+  }, []);
 
   return (
     <HashRouter>
