@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { supabaseClient } from "../../../supabase/supabaseConfig";
 import HelpHttp from "../../shared/helpers/HelpHttp";
 import { vServer } from "../../shared/vars/vServer";
 
