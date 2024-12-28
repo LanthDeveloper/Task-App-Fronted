@@ -30,6 +30,7 @@ function App() {
 
   useEffect(() => {
     if (session) {
+      setUserData(session.user)
       getTasks(session.access_token);
     }
   }, [session]);
@@ -43,7 +44,7 @@ function App() {
      Cada proyecto, un nuevo horizonte    
   Si deseas colaborar conmigo conectemos y       
      creemos algo extraordinario 🚀   
-       
+
      https://lanthdev.pages.dev
       
       `);

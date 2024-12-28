@@ -23,6 +23,7 @@ const Header = () => {
   const { session, userData } = useAuthStore();
   const navigate = useNavigate();
 
+
   const handleLogout = async () => {
     const { error } = await supabaseClient.auth.signOut();
     if (error) {
