@@ -130,7 +130,7 @@ const ModalTask = () => {
                       onValueChange={handleTitleChange}
                       isRequired
                       maxLength={50}
-                      minLength={5}
+                      minLength={3}
                       description={`${form.title.length}/100 caracteres`}
                     />
 
@@ -144,7 +144,7 @@ const ModalTask = () => {
                       value={form.description}
                       onValueChange={handleDescriptionChange}
                       maxLength={300}
-                      minLength={5}
+                      minLength={3}
                       description={`${form.description.length}/300 caracteres`}
                     />
 

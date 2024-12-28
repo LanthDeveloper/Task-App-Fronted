@@ -67,10 +67,12 @@ export const useTaskStore = create(
       editTask: async ({ data, token }) => {
         try {
           const response = await API.put(`${BACKEND_HOST}/api/tasks/${data.id}`, {
+            body: data,
             headers: {
               Authorization: `Bearer ${token}`,
               "Content-Type": "application/json",
             },
+            
           });
 
           if (response.success) {
