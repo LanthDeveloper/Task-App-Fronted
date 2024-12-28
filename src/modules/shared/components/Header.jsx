@@ -112,20 +112,16 @@ const Header = () => {
           )}
 
           {session && (
-            <Link to="/dashboard">
+         
               <Button
                 color="primary"
                 className="rounded-none"
                 variant="flat"
-                onPress={() => {
-                  setTimeout(() => {
-                    setIsMenuOpen(false);
-                  }, 200);
-                }}
+                onPress={() => navigate("/dashboard")}
               >
                 Registrar Tareas
               </Button>
-            </Link>
+      
           )}
         </NavbarItem>
       </NavbarContent>
