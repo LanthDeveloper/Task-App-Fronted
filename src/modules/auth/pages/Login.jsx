@@ -47,8 +47,6 @@ const Login = () => {
     }
 
     setDisabledButton(true);
-    console.log("Correo electrónico:", form.email);
-    console.log("Contraseña:", form.password);
     sendFormLogin({ form });
   };
 
@@ -58,7 +56,7 @@ const Login = () => {
         email: form.email,
         password: form.password,
       });
-      console.log(result);
+
     } catch (err) {
       console.log(err);
       alert("Ocurrió un error al iniciar sesión");

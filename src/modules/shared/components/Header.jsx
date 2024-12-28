@@ -119,7 +119,6 @@ const Header = () => {
                 variant="flat"
                 onPress={() => {
                   setTimeout(() => {
-                    console.log("fsadf");
                     setIsMenuOpen(false);
                   }, 200);
                 }}
@@ -137,7 +136,7 @@ const Header = () => {
             to={session ? "/dashboard" : "/login"}
             onClick={() => {
               setTimeout(() => {
-                console.log("fsadf");
+          
                 setIsMenuOpen(false);
               }, 200);
             }}

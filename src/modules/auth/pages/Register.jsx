@@ -54,9 +54,6 @@ const Register = () => {
 
     setDisabledButton(true);
 
-    console.log("Correo electrónico:", form.email);
-    console.log("Contraseña:", form.password);
-    console.log("Confirmar Contraseña:", form.confirmPassword);
     sendFormRegister({ form });
   };
 
@@ -66,7 +63,7 @@ const Register = () => {
         email: form.email,
         password: form.password,
       });
-      console.log(result);
+  
       alert("Verifica tu correo electrónico para continuar con el registro");
     } catch (err) {
       console.log(err);
